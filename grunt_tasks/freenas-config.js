@@ -120,6 +120,10 @@ module.exports = function ( grunt ) {
           , message : "Which port should be used for the ssh connection?"
           , default : freeNASConfig ? freeNASConfig["sshPort"] : 22
           }
+        , { name    : "guiPath"
+          , message : "Where is your gui development folder?"
+          , default : freeNASConfig ? freeNASConfig["guiPath"] : "."
+          }
         , { name    : "authType"
           , message : "Please select the type of authorization you'd like to" +
                       "use for ssh and rsync"
@@ -256,6 +260,10 @@ module.exports = function ( grunt ) {
             console.log(
               "SSH port     : " +
               chalk.cyan( freeNASConfig["sshPort"] )
+            );
+            console.log(
+              "Path to GUI sources     : " +
+              chalk.cyan( freeNASConfig["guiPath"] )
             );
             if ( freeNASConfig["authType"] === "useKeypair" ) {
               console.log(

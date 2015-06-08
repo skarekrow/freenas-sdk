@@ -109,6 +109,7 @@ module.exports = function ( grunt ) {
     , freeNASConfig: { notConfigured: true
                      , remoteHost: null
                      , sshPort: null
+                     , guiPath: null
                      , authType: null
                      , keyPath: null
                      , rootPass: null

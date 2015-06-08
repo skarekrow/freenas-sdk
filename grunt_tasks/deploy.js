@@ -9,16 +9,16 @@ var chalk = require( "chalk" );
 var path  = require( "path" );
 
 module.exports = function ( grunt ) {
-  var targetPath = "";
+  var targetPath = grunt.config( [ "freeNASConfig" ] )["guiPath"];
 
-  // Set and create deployment target's path relative to current working dir
+  /* Set and create deployment target's path relative to current working dir
   var setTarget = function ( inputPath ) {
     if ( inputPath[0] === "/" ) {
       targetPath = inputPath;
     } else {
       targetPath = path.resolve( process.cwd() + "/" + inputPath );
     }
-  };
+  };*/
 
   grunt.registerTask( "deploy", function () {
     var asyncDone  = this.async();
