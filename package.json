@@ -8,6 +8,7 @@
     "classnames": "^1.2.0",
     "flux": "^2.0.x",
     "fuzzy": "^0.1.0",
+    "grunt-cli": "^0.1.13",
     "keymirror": "^0.1.0",
     "lodash": "^3.5.x",
     "mach": "^1.3.8",
