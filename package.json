@@ -65,7 +65,7 @@
     "lodash",
     "react.js"
   ],
-  "author": "Brandon Schneider <brandonschneider89@gmail.com>",
+  "author": "Brandon Schneider <brandon@ixsystems.com>",
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/skarekrow/freenas-sdk/issues"
