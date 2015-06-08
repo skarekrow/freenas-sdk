@@ -31,24 +31,7 @@ Desktop.ini
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
-
-### PROJECT SETTINGS ###
-
-*.pyc
-*.swp
-*.mo
-*.o
-*.so
-/gui/local_settings.py
-/FreeBSD/
-/filtered-patches/
-/os-base/
-/pbi/
-/sbin/
-
-# Exlude compiled Sphinx docs
-/docs/*/_build/
-
+local_settings.py
 
 # Any and all logs
 *.log
@@ -58,15 +41,12 @@ node_modules
 bower_components
 
 # Exclude compiled webapp
-src/gui/app/build/
-src/gui/app/public/
-src/gui/app/ssrjs/
-src/gui/app-deploy/
+app
 
 # Exclude config files
 freenas9-conf.json
 freenas10-conf.json
-src/gui/freenas9-conf - Copy.json
-src/gui/freenas9-conf - MiniHome.json
-src/gui/freenas10-conf - mini.json
-src/gui/log/
+freenas9-conf - Copy.json
+freenas9-conf - MiniHome.json
+freenas10-conf - mini.json
+log

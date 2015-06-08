@@ -46,11 +46,10 @@
     "jscs": "^1.13.1",
     "load-grunt-tasks": "^3.1.0"
   },
-  "scripts": {
-    "freenas-sdk": "grunt",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "preferGlobal": true,
+  "bin": {
+    "freenas-sdk": "index.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/skarekrow/freenas-sdk.git"
@@ -71,5 +70,5 @@
   "bugs": {
     "url": "https://github.com/skarekrow/freenas-sdk/issues"
   },
-  "homepage": "https://github.com/skarekrow/freenas-sdk#readme",
+  "homepage": "https://github.com/skarekrow/freenas-sdk#readme"
 }

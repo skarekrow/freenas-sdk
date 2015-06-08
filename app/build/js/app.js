@@ -342,6 +342,7 @@ var DisksActionCreators = (function () {
 exports["default"] = DisksActionCreators;
 module.exports = exports["default"];
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62}],6:[function(require,module,exports){
 // Groups Action Creators
 // ==================================
@@ -395,6 +396,7 @@ var GroupsActionCreators = (function () {
 exports["default"] = GroupsActionCreators;
 module.exports = exports["default"];
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62}],7:[function(require,module,exports){
 // Interfaces Action Creators
 // ==========================
@@ -446,6 +448,7 @@ var InterfacesActionCreators = (function () {
 
 exports["default"] = InterfacesActionCreators;
 module.exports = exports["default"];
+
 
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62}],8:[function(require,module,exports){
 // Middleware Action Creators
@@ -544,6 +547,7 @@ var MiddleWareActionCreators = (function () {
 exports["default"] = MiddleWareActionCreators;
 module.exports = exports["default"];
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62}],9:[function(require,module,exports){
 // Network Config Action Creators
 // ==============================
@@ -594,6 +598,7 @@ var NetworkConfigActionCreators = (function () {
 
 exports["default"] = NetworkConfigActionCreators;
 module.exports = exports["default"];
+
 
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62}],10:[function(require,module,exports){
 // Services Action Creators
@@ -647,6 +652,7 @@ var ServicesActionCreators = (function () {
 exports["default"] = ServicesActionCreators;
 module.exports = exports["default"];
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62}],11:[function(require,module,exports){
 // Widget Data Action Creators
 // ==================================
@@ -691,6 +697,7 @@ var StatdActionCreators = (function () {
 
 exports["default"] = StatdActionCreators;
 module.exports = exports["default"];
+
 
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62}],12:[function(require,module,exports){
 // Subscriptions Action Creators
@@ -753,6 +760,7 @@ var SubscriptionsActionCreators = (function () {
 exports["default"] = SubscriptionsActionCreators;
 module.exports = exports["default"];
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62}],13:[function(require,module,exports){
 // System.Info Action Creators
 // ==================================
@@ -806,6 +814,7 @@ var SystemActionCreators = (function () {
 exports["default"] = SystemActionCreators;
 module.exports = exports["default"];
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62}],14:[function(require,module,exports){
 // Users Action Creators
 // ==================================
@@ -858,6 +867,7 @@ var UsersActionCreators = (function () {
 
 exports["default"] = UsersActionCreators;
 module.exports = exports["default"];
+
 
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62}],15:[function(require,module,exports){
 // Zfs.Pool Action Creators
@@ -920,6 +930,7 @@ var ZfsActionCreators = (function () {
 exports["default"] = ZfsActionCreators;
 module.exports = exports["default"];
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62}],16:[function(require,module,exports){
 // CLIENT ENTRYPOINT
 // =================
@@ -957,6 +968,7 @@ _middlewareMiddlewareClient2["default"].connect(protocol + document.domain + ":5
 _reactRouter2["default"].run(_routes2["default"], _reactRouter.HistoryLocation, function (Handler, state) {
   _react2["default"].render(_react2["default"].createElement(Handler, null), document.body);
 });
+
 
 },{"./middleware/MiddlewareClient":67,"./routes":80,"react":400,"react-router":230}],17:[function(require,module,exports){
 // BYTE CALCULATOR
@@ -1131,6 +1143,7 @@ var ByteCalc = (function () {
 exports["default"] = ByteCalc;
 module.exports = exports["default"];
 
+
 },{}],18:[function(require,module,exports){
 // DEBUG LOGGER
 // ============
@@ -1285,6 +1298,7 @@ var DebugLogger = (function () {
 
 exports["default"] = DebugLogger;
 module.exports = exports["default"];
+
 
 },{"lodash":140}],19:[function(require,module,exports){
 // WEBSOCKET CLIENT
@@ -1514,6 +1528,7 @@ var WebSocketClient = (function () {
 exports["default"] = WebSocketClient;
 module.exports = exports["default"];
 
+
 },{"./DebugLogger":18,"lodash":140}],20:[function(require,module,exports){
 // FREENAS UTIL
 // ============
@@ -1536,6 +1551,7 @@ freeNASUtil.generateUUID = function () {
     return v.toString(16);
   });
 };
+
 
 },{}],21:[function(require,module,exports){
 // Busy Box
@@ -1805,6 +1821,7 @@ var BusyBox = _react2["default"].createClass({
 
 module.exports = BusyBox;
 
+
 },{"../middleware/MiddlewareClient":67,"../middleware/PowerMiddleware":70,"../stores/MiddlewareStore":85,"../stores/PowerStore":87,"../stores/SessionStore":89,"./common/Throbber":53,"react":400,"react-bootstrap":194}],22:[function(require,module,exports){
 // DEBUG TOOLS
 // ===========
@@ -1970,6 +1987,7 @@ var DebugTools = _react2["default"].createClass({
 module.exports = DebugTools;
 /* RPC Interface */ /* Event Log */ /* Subscriptions List */ /* Task Log and Queue */ /* Debugging Options */ /* Web Console */
 
+
 },{"./DebugTools/EventBus":23,"./DebugTools/Events":24,"./DebugTools/Options":25,"./DebugTools/RPC":26,"./DebugTools/Subscriptions":27,"./DebugTools/Tasks":28,"./DebugTools/Terminal":29,"react":400,"react-bootstrap":194}],23:[function(require,module,exports){
 // DEBUG TOOLS EVENT BUS
 // =====================
@@ -2005,6 +2023,7 @@ var EventBus = _lodash2["default"].assign({}, _events.EventEmitter.prototype, { 
 
 exports["default"] = EventBus;
 module.exports = exports["default"];
+
 
 },{"events":132,"lodash":140}],24:[function(require,module,exports){
 // Event Log Debug Tab
@@ -2407,6 +2426,7 @@ var Events = _react2["default"].createClass({
 
 module.exports = Events;
 
+
 },{"../../middleware/MiddlewareClient":67,"../../stores/MiddlewareStore":85,"lodash":140,"moment":141,"react":400,"react-bootstrap":194}],25:[function(require,module,exports){
 // Option Flags Debug Tab
 // ======================
@@ -2534,6 +2554,7 @@ var Options = _react2["default"].createClass({
 
 module.exports = Options;
 /* TODO: Should something go here? */
+
 
 },{"../common/ToggleSwitch":54,"react":400,"react-bootstrap":194}],26:[function(require,module,exports){
 // RPC Debug Tab
@@ -2814,6 +2835,7 @@ var RPC = _react2["default"].createClass({
 
 module.exports = RPC;
 
+
 },{"../../middleware/MiddlewareClient":67,"../../stores/MiddlewareStore":85,"../common/DiscTri":50,"../common/FuzzyTypeAhead":51,"lodash":140,"react":400,"react-bootstrap":194}],27:[function(require,module,exports){
 // Subscriptions Debug Tab
 // =============
@@ -3052,6 +3074,7 @@ var Subscriptions = _react2["default"].createClass({
 });
 
 module.exports = Subscriptions;
+
 
 },{"../../middleware/MiddlewareClient":67,"../../stores/SubscriptionsStore":91,"../common/DiscTri":50,"lodash":140,"react":400,"react-bootstrap":194}],28:[function(require,module,exports){
 // Tasks Tab
@@ -3404,6 +3427,7 @@ var Tasks = _react2["default"].createClass({
 
 module.exports = Tasks;
 
+
 },{"../../middleware/MiddlewareClient":67,"../../middleware/TasksMiddleware":75,"../../stores/TasksStore":93,"lodash":140,"moment":141,"react":400,"react-bootstrap":194}],29:[function(require,module,exports){
 // Terminal Tab
 // ============
@@ -3632,6 +3656,7 @@ var Terminal = _react2["default"].createClass({
 
 module.exports = Terminal;
 
+
 },{"../../middleware/ShellMiddleware":72,"../common/Shell":52,"react":400,"react-bootstrap":194}],30:[function(require,module,exports){
 
 
@@ -3689,6 +3714,7 @@ var Icon = _react2["default"].createClass({
 });
 
 module.exports = Icon;
+
 
 },{"lodash":140,"react":400}],31:[function(require,module,exports){
 // PRIMARY NAVIGATION
@@ -3910,6 +3936,7 @@ module.exports = PrimaryNavigation;
 /* TODO: Better content, from Flux store */
 /* TODO: Better content, from Flux store */
 
+
 },{"./DebugTools/EventBus":23,"./Icon":30,"react":400,"react-bootstrap":194,"react-router":230}],32:[function(require,module,exports){
 // SECTION NAV
 // ================
@@ -3994,6 +4021,7 @@ var SectionNav = _react2["default"].createClass({
 
 exports["default"] = SectionNav;
 module.exports = exports["default"];
+
 
 },{"react":400,"react-bootstrap":194,"react-router":230}],33:[function(require,module,exports){
 // VIEWER
@@ -4328,6 +4356,7 @@ exports["default"] = Viewer;
 module.exports = exports["default"];
 /* Searchbox for Viewer (1) */ /* Select view mode (3) */
 
+
 },{"./Icon":30,"./Viewer/DetailViewer":34,"./Viewer/IconViewer":36,"./Viewer/TableViewer":37,"./mixins/viewerCommon":60,"lodash":140,"react":400,"react-bootstrap":194}],34:[function(require,module,exports){
 
 
@@ -4612,6 +4641,7 @@ var DetailViewer = _react2["default"].createClass({
 
 module.exports = DetailViewer;
 
+
 },{"../common/ToggleSwitch":54,"../mixins/viewerCommon":60,"./viewerUtil":38,"lodash":140,"react":400,"react-bootstrap":194,"react-router":230}],35:[function(require,module,exports){
 // Editor Utilities
 // ================
@@ -4722,6 +4752,7 @@ editorUtil.updateOverlay = _react2["default"].createClass({
   }
 
 });
+
 
 },{"../../common/Throbber":53,"lodash":140,"react":400,"react-bootstrap":194}],36:[function(require,module,exports){
 
@@ -4933,6 +4964,7 @@ var IconViewer = _react2["default"].createClass({
 });
 
 module.exports = IconViewer;
+
 
 },{"../Icon":30,"../common/ToggleSwitch":54,"../mixins/viewerCommon":60,"./viewerUtil":38,"react":400,"react-router":230}],37:[function(require,module,exports){
 
@@ -5205,6 +5237,7 @@ var TableViewer = _react2["default"].createClass({
 });
 
 module.exports = TableViewer;
+
 
 },{"../Icon":30,"../mixins/viewerCommon":60,"./viewerUtil":38,"lodash":140,"react":400,"react-bootstrap":194,"react-router":230}],38:[function(require,module,exports){
 // Viewer Utilities
@@ -5499,6 +5532,7 @@ viewerUtil.DataCell = _react2["default"].createClass({
   }
 });
 
+
 },{"../../components/Icon":30,"react":400,"react-bootstrap":194}],39:[function(require,module,exports){
 // Information Bar
 // ===============
@@ -5523,6 +5557,7 @@ var InformationBar = _react2["default"].createClass({
 });
 
 module.exports = InformationBar;
+
 
 },{"react":400}],40:[function(require,module,exports){
 // Notification Bar
@@ -5932,6 +5967,7 @@ var NotificationBar = _react2["default"].createClass({
 module.exports = NotificationBar;
 /* System Events */ /* Alert Messages */ /* System Tasks/Actions */
 
+
 },{"../../middleware/MiddlewareClient":67,"../Icon":30,"react":400,"react-bootstrap":194}],41:[function(require,module,exports){
 
 
@@ -6009,6 +6045,7 @@ var Widget = _react2["default"].createClass({
 
 module.exports = Widget;
 
+
 },{"./Icon":30,"lodash":140,"react":400}],42:[function(require,module,exports){
 
 
@@ -6076,6 +6113,7 @@ var CpuUtil = _react2["default"].createClass({
 });
 
 module.exports = CpuUtil;
+
 
 },{"./mixins/chartHandler":48,"react":400,"round":401}],43:[function(require,module,exports){
 
@@ -6166,6 +6204,7 @@ var DiskUsage = _react2["default"].createClass({
 });
 
 module.exports = DiskUsage;
+
 
 },{"../../middleware/ZfsMiddleware":78,"../../stores/ZfsStore":96,"./mixins/chartHandler":48,"react":400,"round":401}],44:[function(require,module,exports){
 
@@ -6288,6 +6327,7 @@ var MemoryUtil = _react2["default"].createClass({
 
 module.exports = MemoryUtil;
 
+
 },{"../../middleware/SystemMiddleware":74,"../../stores/SystemStore":92,"./mixins/chartHandler":48,"react":400,"round":401}],45:[function(require,module,exports){
 
 
@@ -6395,6 +6435,7 @@ var NetworkUsage = React.createClass({
 });
 
 module.exports = NetworkUsage;
+
 
 },{"../../middleware/SystemMiddleware":74,"../../stores/SystemStore":92,"./mixins/chartHandler":48,"react":400,"round":401}],46:[function(require,module,exports){
 
@@ -6554,6 +6595,7 @@ module.exports = SystemInfo;
         </div>
 */
 
+
 },{"../../middleware/SystemMiddleware":74,"../../stores/SystemStore":92,"../../stores/UpdateStore":94,"../Widget":41,"react":400,"round":401}],47:[function(require,module,exports){
 
 
@@ -6609,6 +6651,7 @@ var SystemLoad = React.createClass({
 });
 
 module.exports = SystemLoad;
+
 
 },{"./mixins/chartHandler":48,"react":400,"round":401}],48:[function(require,module,exports){
 // CHART HANDLER
@@ -7115,6 +7158,7 @@ module.exports = {
   }
 };
 
+
 },{"../../../middleware/StatdMiddleware":73,"../../../stores/StatdStore":90,"../../Widget":41,"lodash":140,"moment":141,"react":400,"react-component-width-mixin":204}],49:[function(require,module,exports){
 // Generic Confirmation Dialog Box
 // ===============================
@@ -7229,6 +7273,7 @@ var ConfDialog = _react2["default"].createClass({
 
 module.exports = ConfDialog;
 
+
 },{"react":400,"react-bootstrap":194}],50:[function(require,module,exports){
 // Generic Disclosure Triangle based React Components
 // ===============================
@@ -7319,6 +7364,7 @@ var DiscTri = _react2["default"].createClass({
 });
 
 module.exports = DiscTri;
+
 
 },{"../Icon":30,"react":400}],51:[function(require,module,exports){
 // Copyright (c) 2013, Peter Ruibal <ruibalp@gmail.com>
@@ -7790,6 +7836,7 @@ var FuzzyTypeAhead = _react2["default"].createClass({
 
 module.exports = FuzzyTypeAhead;
 
+
 },{"classnames":122,"fuzzy":126,"react":400,"react-bootstrap":194}],52:[function(require,module,exports){
 // SHELL
 // =====
@@ -7886,6 +7933,7 @@ var Shell = _react2["default"].createClass({
 
 module.exports = Shell;
 
+
 },{"../../middleware/ShellMiddleware":72,"react":400,"term.js":402}],53:[function(require,module,exports){
 // Throbber
 // ========
@@ -7921,6 +7969,7 @@ var Throbber = _react2["default"].createClass({
 });
 
 module.exports = Throbber;
+
 
 },{"react":400}],54:[function(require,module,exports){
 // TOGGLE SWITCH
@@ -7977,6 +8026,7 @@ var ToggleSwitch = _react2["default"].createClass({
 
 module.exports = ToggleSwitch;
 
+
 },{"react":400}],55:[function(require,module,exports){
 // CLIENT STATUS MIXIN
 // ===================
@@ -8009,6 +8059,7 @@ module.exports = {
   }
 
 };
+
 
 },{"../../stores/SessionStore":89}],56:[function(require,module,exports){
 // Group Editing Mixins
@@ -8071,6 +8122,7 @@ module.exports = {
     _middlewareGroupsMiddleware2["default"].deleteGroup(this.props.item["id"], this.returnToViewerRoot());
   }
 };
+
 
 },{"../../middleware/GroupsMiddleware":64,"../../stores/GroupsStore":83,"lodash":140}],57:[function(require,module,exports){
 // INPUT HELPER MIXIN
@@ -8264,6 +8316,7 @@ module.exports = {
   }
 };
 
+
 },{"lodash":140,"react":400}],58:[function(require,module,exports){
 // ROUTER SHIM
 // ===========
@@ -8335,6 +8388,7 @@ module.exports = {
 
 };
 
+
 },{"lodash":140,"react":400}],59:[function(require,module,exports){
 // User Editing Mixins
 // ===================
@@ -8401,6 +8455,7 @@ module.exports = {
   }
 };
 
+
 },{"../../middleware/ShellMiddleware":72,"../../middleware/UsersMiddleware":77,"../../stores/UsersStore":95,"lodash":140}],60:[function(require,module,exports){
 // COMMON VIEWER MODE MIXIN
 // ========================
@@ -8452,6 +8507,7 @@ module.exports = {
   }
 
 };
+
 
 },{"lodash":140}],61:[function(require,module,exports){
 // FreeNAS Constants
@@ -8539,6 +8595,7 @@ exports["default"] = {
 };
 module.exports = exports["default"];
 
+
 },{"keymirror":139}],62:[function(require,module,exports){
 // FreeNAS Dispatcher
 // ------------------
@@ -8608,6 +8665,7 @@ FreeNASDispatcher = _lodash2["default"].assign(new _flux.Dispatcher(), {
 });
 
 module.exports = FreeNASDispatcher;
+
 
 },{"../constants/FreeNASConstants":61,"async":121,"flux":123,"lodash":140}],63:[function(require,module,exports){
 // Disks Middleware
@@ -8692,6 +8750,7 @@ var DisksMiddleware = (function (_AbstractBase) {
 
 exports["default"] = DisksMiddleware;
 module.exports = exports["default"];
+
 
 },{"../actions/DisksActionCreators":5,"./MiddlewareAbstract":66,"./MiddlewareClient":67,"lodash":140}],64:[function(require,module,exports){
 // Groups Middleware
@@ -8785,6 +8844,7 @@ var GroupsMiddleware = (function (_AbstractBase) {
 exports["default"] = GroupsMiddleware;
 module.exports = exports["default"];
 
+
 },{"../actions/GroupsActionCreators":6,"./MiddlewareAbstract":66,"./MiddlewareClient":67}],65:[function(require,module,exports){
 // Interfaces Middleware
 // =====================
@@ -8862,6 +8922,7 @@ var InterfacesMiddleware = (function (_AbstractBase) {
 exports["default"] = InterfacesMiddleware;
 module.exports = exports["default"];
 
+
 },{"../actions/InterfacesActionCreators":7,"./MiddlewareAbstract":66,"./MiddlewareClient":67}],66:[function(require,module,exports){
 // ABSTRACT MIDDLEWARE BASE CLASS
 // ==============================
@@ -8887,6 +8948,7 @@ var MiddlewareAbstract = function MiddlewareAbstract() {
 
 exports["default"] = MiddlewareAbstract;
 module.exports = exports["default"];
+
 
 },{}],67:[function(require,module,exports){
 // Webapp Middleware
@@ -9531,6 +9593,7 @@ var MiddlewareClient = (function (_WebSocketClient) {
 exports["default"] = new MiddlewareClient();
 module.exports = exports["default"];
 
+
 },{"../actions/MiddlewareActionCreators":8,"../actions/SubscriptionsActionCreators":12,"../common/WebSocketClient":19,"../common/freeNASUtil":20,"../stores/MiddlewareStore":85,"../stores/SessionStore":89,"../stores/SubscriptionsStore":91,"./MiddlewareClientDebug":68,"./cookies":79,"lodash":140}],68:[function(require,module,exports){
 // MIDDLEWARE CLIENT DEBUG
 // =======================
@@ -9689,6 +9752,7 @@ var MiddlewareClientDebug = (function (_DebugLogger) {
 exports["default"] = new MiddlewareClientDebug();
 module.exports = exports["default"];
 
+
 },{"../common/DebugLogger":18,"lodash":140}],69:[function(require,module,exports){
 // Network Config Middleware
 // =========================
@@ -9757,6 +9821,7 @@ var NetworkConfigMiddleware = (function () {
 
 exports["default"] = NetworkConfigMiddleware;
 module.exports = exports["default"];
+
 
 },{"../actions/NetworkConfigActionCreators":9,"./MiddlewareAbstract":66,"./MiddlewareClient":67}],70:[function(require,module,exports){
 // Power Middleware
@@ -9836,6 +9901,7 @@ var PowerMiddleware = (function (_AbstractBase) {
 
 exports["default"] = PowerMiddleware;
 module.exports = exports["default"];
+
 
 },{"./MiddlewareAbstract":66,"./MiddlewareClient":67,"./cookies":79}],71:[function(require,module,exports){
 // Services Middleware
@@ -9919,6 +9985,7 @@ var ServicesMiddleware = (function (_AbstractBase) {
 exports["default"] = ServicesMiddleware;
 module.exports = exports["default"];
 
+
 },{"../actions/ServicesActionCreators":10,"./MiddlewareAbstract":66,"./MiddlewareClient":67}],72:[function(require,module,exports){
 // Shell Middleware
 // ================
@@ -9976,6 +10043,7 @@ var ShellMiddleware = (function (_AbstractBase) {
 
 exports["default"] = ShellMiddleware;
 module.exports = exports["default"];
+
 
 },{"./MiddlewareAbstract":66,"./MiddlewareClient":67}],73:[function(require,module,exports){
 // Widget Data Middleware
@@ -10052,6 +10120,7 @@ var StatdMiddleware = (function (_AbstractBase) {
 exports["default"] = StatdMiddleware;
 module.exports = exports["default"];
 
+
 },{"../actions/StatdActionCreators":11,"./MiddlewareAbstract":66,"./MiddlewareClient":67}],74:[function(require,module,exports){
 // System Info Data Middleware
 // ===================
@@ -10116,6 +10185,7 @@ var SystemMiddleware = (function (_AbstractBase) {
 
 exports["default"] = SystemMiddleware;
 module.exports = exports["default"];
+
 
 },{"../actions/SystemActionCreators":13,"./MiddlewareAbstract":66,"./MiddlewareClient":67}],75:[function(require,module,exports){
 // Users Middleware
@@ -10184,6 +10254,7 @@ var TasksMiddleware = (function (_AbstractBase) {
 exports["default"] = TasksMiddleware;
 module.exports = exports["default"];
 
+
 },{"./MiddlewareAbstract":66,"./MiddlewareClient":67}],76:[function(require,module,exports){
 // Update Middleware
 // ================
@@ -10237,6 +10308,7 @@ var UpdateMiddleware = (function (_AbstractBase) {
 
 exports["default"] = UpdateMiddleware;
 module.exports = exports["default"];
+
 
 },{"./MiddlewareAbstract":66,"./MiddlewareClient":67}],77:[function(require,module,exports){
 // Users Middleware
@@ -10330,6 +10402,7 @@ var UsersMiddleware = (function (_AbstractBase) {
 exports["default"] = UsersMiddleware;
 module.exports = exports["default"];
 
+
 },{"../actions/UsersActionCreators":14,"./MiddlewareAbstract":66,"./MiddlewareClient":67}],78:[function(require,module,exports){
 // ZFS Pool Middleware
 // ===================
@@ -10402,6 +10475,7 @@ var ZfsMiddleware = (function (_AbstractBase) {
 exports["default"] = ZfsMiddleware;
 module.exports = exports["default"];
 
+
 },{"../actions/ZfsActionCreators":15,"./MiddlewareAbstract":66,"./MiddlewareClient":67}],79:[function(require,module,exports){
 // Generic set of functions to use for cookie manipulation
 // add, delete and that sort of thing
@@ -10433,6 +10507,7 @@ var myCookies = {
 };
 
 module.exports = myCookies;
+
 
 },{}],80:[function(require,module,exports){
 // FREENAS GUI ROUTES
@@ -10667,6 +10742,7 @@ module.exports = _react2["default"].createElement(
 );
 /* ACCOUNTS */ /* USERS */ /* GROUPS */ /* TASKS */ /* NETWORK */ /* GLOBAL NETWORK CONFIGURATION */ /* NETWORK INTERFACES */ /* STORAGE */ /* SHARING */ /* SERVICES */ /* SYSTEM TOOLS */ /* CONTROL PANEL */ /* POWER */
 
+
 },{"./views/Accounts":97,"./views/Accounts/Groups":98,"./views/Accounts/Groups/AddGroup":99,"./views/Accounts/Groups/GroupItem":100,"./views/Accounts/Users":101,"./views/Accounts/Users/AddUser":102,"./views/Accounts/Users/UserItem":103,"./views/ControlPanel":104,"./views/Dashboard":105,"./views/FreeNASWebApp":106,"./views/Network":107,"./views/Network/Interfaces":108,"./views/Network/Interfaces/InterfaceItem":110,"./views/Network/NetworkConfig":111,"./views/PageNotFound":112,"./views/Power":113,"./views/Services":114,"./views/Services/ServiceItem":115,"./views/Sharing":116,"./views/Storage":117,"./views/Storage/Disks":118,"./views/SystemTools":119,"./views/Tasks":120,"react":400,"react-router":230}],81:[function(require,module,exports){
 // DISKS STORE
 // ===========
@@ -10753,6 +10829,7 @@ function handlePayload(payload) {
 exports["default"] = new DisksStore();
 module.exports = exports["default"];
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62,"../middleware/DisksMiddleware":63,"./FluxBase":82,"lodash":140}],82:[function(require,module,exports){
 // FLUX STORE BASE CLASS
 // =====================
@@ -10809,6 +10886,7 @@ var FluxBaseClass = (function (_EventEmitter) {
 
 exports["default"] = FluxBaseClass;
 module.exports = exports["default"];
+
 
 },{"events":132}],83:[function(require,module,exports){
 // Groups Flux Store
@@ -10940,6 +11018,7 @@ GroupsStore.dispatchToken = _dispatcherFreeNASDispatcher2["default"].register(fu
 });
 
 module.exports = GroupsStore;
+
 
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62,"../middleware/GroupsMiddleware":64,"events":132,"lodash":140}],84:[function(require,module,exports){
 // Interfaces Flux Store
@@ -11134,6 +11213,7 @@ InterfacesStore.dispatchToken = _dispatcherFreeNASDispatcher2["default"].registe
 
 module.exports = InterfacesStore;
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62,"../middleware/InterfacesMiddleware":65,"events":132,"lodash":140}],85:[function(require,module,exports){
 // Middleware Flux Store
 // =====================
@@ -11252,6 +11332,7 @@ MiddlewareStore.dispatchToken = _dispatcherFreeNASDispatcher2["default"].registe
 
 module.exports = MiddlewareStore;
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62,"events":132,"lodash":140}],86:[function(require,module,exports){
 // Network Config Flux Store
 // =========================
@@ -11346,6 +11427,7 @@ NetworkConfigStore.dispatchToken = _dispatcherFreeNASDispatcher2["default"].regi
 });
 
 module.exports = NetworkConfigStore;
+
 
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62,"../middleware/GroupsMiddleware":64,"events":132,"lodash":140}],87:[function(require,module,exports){
 // Power Flux Store
@@ -11465,6 +11547,7 @@ PowerStore.dispatchToken = _dispatcherFreeNASDispatcher2["default"].register(fun
 
 module.exports = PowerStore;
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62,"events":132,"lodash":140}],88:[function(require,module,exports){
 // Services Flux Store
 // ----------------
@@ -11551,6 +11634,7 @@ ServicesStore.dispatchToken = _dispatcherFreeNASDispatcher2["default"].register(
 
 module.exports = ServicesStore;
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62,"../middleware/ServicesMiddleware":71,"events":132,"lodash":140}],89:[function(require,module,exports){
 // Session Flux Store
 // ==================
@@ -11619,6 +11703,7 @@ SessionStore.dispatchToken = _dispatcherFreeNASDispatcher2["default"].register(f
 });
 
 module.exports = SessionStore;
+
 
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62,"events":132,"lodash":140}],90:[function(require,module,exports){
 // Widget Data Flux Store
@@ -11696,6 +11781,7 @@ StatdStore.dispatchToken = _dispatcherFreeNASDispatcher2["default"].register(fun
 });
 
 module.exports = StatdStore;
+
 
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62,"events":132,"lodash":140}],91:[function(require,module,exports){
 // Middleware Flux Store
@@ -11843,6 +11929,7 @@ SubscriptionsStore.dispatchToken = _dispatcherFreeNASDispatcher2["default"].regi
 
 module.exports = SubscriptionsStore;
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62,"events":132,"lodash":140}],92:[function(require,module,exports){
 // System Flux Store
 // ----------------
@@ -11912,6 +11999,7 @@ SystemStore.dispatchToken = _dispatcherFreeNASDispatcher2["default"].register(fu
 });
 
 module.exports = SystemStore;
+
 
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62,"events":132,"lodash":140}],93:[function(require,module,exports){
 // Tasks Flux Store
@@ -12078,6 +12166,7 @@ TasksStore.dispatchToken = _dispatcherFreeNASDispatcher2["default"].register(fun
 
 module.exports = TasksStore;
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62,"events":132,"lodash":140}],94:[function(require,module,exports){
 // Update Data Flux Store
 // ----------------
@@ -12138,6 +12227,7 @@ UpdateStore.dispatchToken = _dispatcherFreeNASDispatcher2["default"].register(fu
 });
 
 module.exports = UpdateStore;
+
 
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62,"events":132,"lodash":140}],95:[function(require,module,exports){
 // Users Flux Store
@@ -12291,6 +12381,7 @@ module.exports = UsersStore;
 
 // TODO: Are there any other cases?
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62,"../middleware/UsersMiddleware":77,"events":132,"lodash":140}],96:[function(require,module,exports){
 // Zfs Flux Store
 // ----------------
@@ -12370,6 +12461,7 @@ ZfsStore.dispatchToken = _dispatcherFreeNASDispatcher2["default"].register(funct
 
 module.exports = ZfsStore;
 
+
 },{"../constants/FreeNASConstants":61,"../dispatcher/FreeNASDispatcher":62,"events":132,"lodash":140}],97:[function(require,module,exports){
 // Users and Groups
 // ================
@@ -12429,6 +12521,7 @@ var Accounts = _react2["default"].createClass({
 
 exports["default"] = Accounts;
 module.exports = exports["default"];
+
 
 },{"../components/SectionNav":32,"../components/mixins/routerShim":58,"react":400,"react-router":230}],98:[function(require,module,exports){
 // Groups
@@ -12552,6 +12645,7 @@ var Groups = _react2["default"].createClass({
 
 exports["default"] = Groups;
 module.exports = exports["default"];
+
 
 },{"../../../data/middleware-keys/groups-display.json":1,"../../components/Viewer":33,"../../middleware/GroupsMiddleware":64,"../../middleware/UsersMiddleware":77,"../../stores/GroupsStore":83,"../../stores/UsersStore":95,"react":400}],99:[function(require,module,exports){
 // Add Group Template
@@ -12728,6 +12822,7 @@ var AddGroup = _react2["default"].createClass({
 exports["default"] = AddGroup;
 module.exports = exports["default"];
 /* Group id */ /* username */
+
 
 },{"../../../components/mixins/groupMixins":56,"../../../components/mixins/inputHelpers":57,"../../../middleware/GroupsMiddleware":64,"../../../stores/GroupsStore":83,"lodash":140,"react":400,"react-bootstrap":194}],100:[function(require,module,exports){
 // Group Item Template
@@ -13215,6 +13310,7 @@ exports["default"] = GroupItem;
 module.exports = exports["default"];
 /* "Edit Group" Button - Top */ /* Shows a warning if the group account is built in */ /* Primary group data overview */ /* "Edit Group" Button - Bottom */ /*Group id*/ /* name */ /* Save and Cancel Buttons - Top */ /* Shows a warning if the group is built in */ /* Save and Cancel Buttons - Bottom */ /* Overlay to block interaction while tasks or updates are processing */
 
+
 },{"../../../components/Viewer/Editor/editorUtil":35,"../../../components/Viewer/viewerUtil":38,"../../../components/mixins/clientStatus":55,"../../../components/mixins/groupMixins":56,"../../../components/mixins/inputHelpers":57,"../../../components/mixins/routerShim":58,"../../../components/mixins/viewerCommon":60,"../../../middleware/GroupsMiddleware":64,"../../../stores/GroupsStore":83,"../../../stores/UsersStore":95,"lodash":140,"react":400,"react-bootstrap":194}],101:[function(require,module,exports){
 // Users
 // =====
@@ -13349,6 +13445,7 @@ var Users = _react2["default"].createClass({
 
 exports["default"] = Users;
 module.exports = exports["default"];
+
 
 },{"../../../data/middleware-keys/users-display.json":4,"../../components/Viewer":33,"../../middleware/GroupsMiddleware":64,"../../middleware/UsersMiddleware":77,"../../stores/GroupsStore":83,"../../stores/SessionStore":89,"../../stores/UsersStore":95,"react":400}],102:[function(require,module,exports){
 // Add User Template
@@ -13675,6 +13772,7 @@ var AddUser = _react2["default"].createClass({
 exports["default"] = AddUser;
 module.exports = exports["default"];
 /*TODO: Style unedited default values differently from edited ones*/ /* User id */ /* username */ /* Full Name */ /* email */ /* shell */ /* primary group */ /* TODO: Recommend the default group based on the username. Requires creating a group at user-creation time.*/ /* sshpubkey */ /* Additional Groups */ /* locked */ /* sudo */ /* password_disabled */
+
 
 },{"../../../components/mixins/groupMixins":56,"../../../components/mixins/inputHelpers":57,"../../../components/mixins/userMixins":59,"../../../components/mixins/viewerCommon":60,"../../../middleware/GroupsMiddleware":64,"../../../middleware/UsersMiddleware":77,"../../../stores/GroupsStore":83,"../../../stores/UsersStore":95,"lodash":140,"react":400,"react-bootstrap":194}],103:[function(require,module,exports){
 // User Item Template
@@ -14319,6 +14417,7 @@ exports["default"] = UserItem;
 module.exports = exports["default"];
 /* "Edit User" Button - Top */ /* User icon and general information */ /* Shows a warning if the user account is built in */ /* Primary user data overview */ /* "Edit User" Button - Bottom */ /* User id */ /* username */ /* full_name*/ /* email */ /* shell */ /* primary group */ /* sshpubkey */ /* Other Groups */ /* locked */ /* sudo */ /* password_disabled */ /* logged-in */ /* Save and Cancel Buttons - Top */ /* Shows a warning if the user account is built in */ /* Save and Cancel Buttons - Bottom */ /* Overlay to block interaction while tasks or updates are processing */
 
+
 },{"../../../components/Viewer/Editor/editorUtil":35,"../../../components/Viewer/viewerUtil":38,"../../../components/mixins/clientStatus":55,"../../../components/mixins/inputHelpers":57,"../../../components/mixins/routerShim":58,"../../../components/mixins/userMixins":59,"../../../components/mixins/viewerCommon":60,"../../../middleware/UsersMiddleware":77,"../../../stores/GroupsStore":83,"../../../stores/UsersStore":95,"lodash":140,"react":400,"react-bootstrap":194}],104:[function(require,module,exports){
 // Control Panel
 // ================
@@ -14354,6 +14453,7 @@ var ControlPanel = _react2["default"].createClass({
 
 exports["default"] = ControlPanel;
 module.exports = exports["default"];
+
 
 },{"react":400}],105:[function(require,module,exports){
 // Dashboard
@@ -14865,6 +14965,7 @@ var Dashboard = _react2["default"].createClass({
 exports["default"] = Dashboard;
 module.exports = exports["default"];
 
+
 },{"../components/Widgets/CpuUtil":42,"../components/Widgets/DiskUsage":43,"../components/Widgets/MemoryUtil":44,"../components/Widgets/NetworkUsage":45,"../components/Widgets/SystemInfo":46,"../components/Widgets/SystemLoad":47,"../middleware/ServicesMiddleware":71,"../stores/ServicesStore":88,"lodash":140,"react":400}],106:[function(require,module,exports){
 // Main App Wrapper
 // ================
@@ -14949,6 +15050,7 @@ module.exports = exports["default"];
 /* TODO: Add Modal mount div */ /* Modal windows for busy spinner and/or FreeNAS login
                                      -- hidden normally except when invoked*/ /* Header containing system status and information */ /* Primary navigation menu */ /* Primary view */ /* User-customizable component showing system events */
 
+
 },{"../components/BusyBox":21,"../components/DebugTools":22,"../components/PrimaryNavigation":31,"../components/WebApp/InformationBar":39,"../components/WebApp/NotificationBar":40,"../components/mixins/routerShim":58,"react":400,"react-router":230}],107:[function(require,module,exports){
 // Network
 // =======
@@ -15010,6 +15112,7 @@ var Network = _react2["default"].createClass({
 
 exports["default"] = Network;
 module.exports = exports["default"];
+
 
 },{"../components/SectionNav":32,"../components/mixins/routerShim":58,"react":400,"react-router":230}],108:[function(require,module,exports){
 // Interfaces
@@ -15103,6 +15206,7 @@ var Interfaces = _react2["default"].createClass({
 
 exports["default"] = Interfaces;
 module.exports = exports["default"];
+
 
 },{"../../../data/middleware-keys/interfaces-display.json":2,"../../components/Viewer":33,"../../middleware/InterfacesMiddleware":65,"../../stores/InterfacesStore":84,"react":400}],109:[function(require,module,exports){
 // Interface Edit View
@@ -15331,6 +15435,7 @@ module.exports = exports["default"];
                                                                                                                                labelClassName = "col-xs-3"
                                                                                                                                wrapperClassName = "col-xs-9"
                                                                                                                              />*/
+
 
 },{"../../../components/mixins/inputHelpers":57,"../../../components/mixins/viewerCommon":60,"../../../middleware/InterfacesMiddleware":65,"lodash":140,"react":400,"react-bootstrap":194}],110:[function(require,module,exports){
 // Interface Item
@@ -15684,6 +15789,7 @@ var InterfaceItem = _react2["default"].createClass({
 exports["default"] = InterfaceItem;
 module.exports = exports["default"];
 
+
 },{"../../../components/Icon":30,"../../../components/Viewer/viewerUtil":38,"../../../components/mixins/clientStatus":55,"../../../components/mixins/routerShim":58,"../../../stores/InterfacesStore":84,"./InterfaceEdit":109,"lodash":140,"react":400,"react-bootstrap":194}],111:[function(require,module,exports){
 // Network Configuration Overview
 // ==============================
@@ -15825,6 +15931,7 @@ var NetworkConfig = _react2["default"].createClass({
 exports["default"] = NetworkConfig;
 module.exports = exports["default"];
 
+
 },{"../../components/Icon":30,"../../middleware/NetworkConfigMiddleware":69,"../../stores/NetworkConfigStore":86,"lodash":140,"react":400,"react-bootstrap":194}],112:[function(require,module,exports){
 // Page Not Found
 // ================
@@ -15856,6 +15963,7 @@ var Accounts = _react2["default"].createClass({
 
 exports["default"] = Accounts;
 module.exports = exports["default"];
+
 
 },{"react":400}],113:[function(require,module,exports){
 // Power
@@ -15940,6 +16048,7 @@ var Power = _react2["default"].createClass({
 
 exports["default"] = Power;
 module.exports = exports["default"];
+
 
 },{"../components/Icon":30,"../components/common/ConfDialog":49,"../middleware/PowerMiddleware":70,"react":400}],114:[function(require,module,exports){
 // Services
@@ -16056,6 +16165,7 @@ var Services = _react2["default"].createClass({
 
 exports["default"] = Services;
 module.exports = exports["default"];
+
 
 },{"../../data/middleware-keys/services-display.json":3,"../components/Viewer":33,"../middleware/ServicesMiddleware":71,"../stores/ServicesStore":88,"react":400}],115:[function(require,module,exports){
 // Service Item Template
@@ -16311,6 +16421,7 @@ exports["default"] = ServiceItem;
 module.exports = exports["default"];
 /* General information */
 
+
 },{"../../components/Viewer/viewerUtil":38,"../../components/common/ToggleSwitch":54,"../../components/mixins/clientStatus":55,"../../components/mixins/routerShim":58,"../../middleware/ServicesMiddleware":71,"../../stores/ServicesStore":88,"lodash":140,"react":400,"react-bootstrap":194}],116:[function(require,module,exports){
 // Sharing
 // =======
@@ -16346,6 +16457,7 @@ var Sharing = _react2["default"].createClass({
 
 exports["default"] = Sharing;
 module.exports = exports["default"];
+
 
 },{"react":400}],117:[function(require,module,exports){
 // Storage
@@ -16405,6 +16517,7 @@ var Storage = _react2["default"].createClass({ displayName: "Storage",
 
 exports["default"] = Storage;
 module.exports = exports["default"];
+
 
 },{"../components/SectionNav":32,"../components/mixins/routerShim":58,"react":400,"react-router":230}],118:[function(require,module,exports){
 // DISKS VIEW
@@ -16491,6 +16604,7 @@ var Disks = _react2["default"].createClass({
 exports["default"] = Disks;
 module.exports = exports["default"];
 
+
 },{"../../common/ByteCalc":17,"../../components/Viewer":33,"../../middleware/DisksMiddleware":63,"../../stores/DisksStore":81,"react":400}],119:[function(require,module,exports){
 // System Tools
 // =======
@@ -16559,6 +16673,7 @@ var SystemTools = _react2["default"].createClass({
 exports["default"] = SystemTools;
 module.exports = exports["default"];
 
+
 },{"../components/Icon":30,"../components/common/ConfDialog":49,"../middleware/UpdateMiddleware":76,"react":400}],120:[function(require,module,exports){
 // Tasks
 // =====
@@ -16594,6 +16709,7 @@ var Tasks = _react2["default"].createClass({
 
 exports["default"] = Tasks;
 module.exports = exports["default"];
+
 
 },{"react":400}],121:[function(require,module,exports){
 (function (process){
