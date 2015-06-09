@@ -1,5 +1,5 @@
 // DEVELOP
-// Meta task for managing local and remote development. Constructs task queues
+// Meta task for managing development. Constructs task queues
 // on the fly, and prompts users to enter any required information or install
 // any required software.
 

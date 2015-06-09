@@ -141,12 +141,8 @@ module.exports = function ( grunt ) {
 
 
   // DEFAULT
-  // When "grunt" is run with no arguments, run "develop". This will run
-  // environment and dependency checkers, manage the FreeNAS remote config file,
-  // and bootstrap the FreeNAS environment.
+  // This will run environment and dependency checkers,
+  // manage the FreeNAS config file and bootstrap the FreeNAS environment.
 
-  // Options
-  // --local   Start a local dev server, ignore any config files.
-  // TODO: --local not working?
   grunt.registerTask( "default", [ "develop" ] );
 };

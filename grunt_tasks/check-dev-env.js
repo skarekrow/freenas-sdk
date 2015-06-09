@@ -1,6 +1,6 @@
 // CHECK-DEV-ENV
 // A sanity check for the local development environment. Run as a prerequisite
-// to all development, local or remote.
+// to all development.
 
 "use strict";
 
