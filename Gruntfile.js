@@ -5,7 +5,6 @@
 var _    = require( "lodash" );
 var glob = require( "glob" );
 
-
 // Gruntfile
 // =============================================================================
 // This file is the 'control panel' for the entire project. Grunt is a
@@ -45,7 +44,11 @@ module.exports = function ( grunt ) {
   // will simplify any changes to file structure, ports, etc.
 
   // Path variables for Bower components
-  var bc = "./bower_components/";
+  var confFile = grunt.file.readJSON( "freenas10-conf.json" )
+  var targetPath = confFile.guiPath;
+  process.chdir( targetPath );
+
+  var bc = "bower_components/";
   var bowerConfig =
     { velocity: bc + "velocity"
     , d3: bc + "d3"
