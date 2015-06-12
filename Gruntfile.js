@@ -125,7 +125,6 @@ module.exports = function ( grunt ) {
 
   grunt.initConfig( gruntConfig );
 
-
   // LOAD GRUNT TASKS FROM NPM
   // ===========================================================================
   // Here, we tell grunt to load the packages from package.json. Tasks must be

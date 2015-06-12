@@ -91,7 +91,7 @@ module.exports = function ( grunt ) {
     function configInquiry () {
       var configPrompts = [
           { name     : "remoteHost"
-          , message  : "What is the IP address or hostname of your FreeNAS" +
+          , message  : "What is the IP address or hostname of your FreeNAS " +
                        "instance?"
           , default  : freeNASConfig ? freeNASConfig["remoteHost"] : null
           , validate : function ( input ) {
