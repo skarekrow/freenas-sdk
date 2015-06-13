@@ -2,9 +2,9 @@
 // 2014-09-20
 "use strict";
 
-var _    = require( "lodash" );
-var glob = require( "glob" );
-var fs   = require( "fs" );
+var _        = require( "lodash" );
+var glob     = require( "glob" );
+var fs       = require( "fs" );
 var inquirer = require( "inquirer" );
 
 // Gruntfile
