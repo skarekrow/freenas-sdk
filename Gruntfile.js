@@ -4,6 +4,8 @@
 
 var _    = require( "lodash" );
 var glob = require( "glob" );
+var fs   = require( "fs" );
+var inquirer = require( "inquirer" );
 
 // Gruntfile
 // =============================================================================
@@ -44,9 +46,24 @@ module.exports = function ( grunt ) {
   // will simplify any changes to file structure, ports, etc.
 
   // Path variables for Bower components
-  var confFile = grunt.file.readJSON( "freenas10-conf.json" )
-  var targetPath = confFile.guiPath;
-  process.chdir( targetPath );
+  var confFile;
+  var targetPath;
+  var confLocation = [
+    { name    : "guiPath"
+    , message : "Where is your gui development folder?"
+    , default : "."
+  }];
+
+  if ( fs.exists( "./freenas10-conf.json" ) ) {
+    confFile = grunt.file.readJSON( "freenas10-conf.json" );
+    targetPath = confFile.guiPath;
+    process.chdir( targetPath );
+  } else {
+    inquirer.prompt( confLocation, function ( answers ) {
+      targetPath = confLocation;
+      process.chdir( targetPath );
+    });
+  };
 
   var bc = "bower_components/";
   var bowerConfig =
