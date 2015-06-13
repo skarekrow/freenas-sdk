@@ -6,7 +6,7 @@ var _        = require( "lodash" );
 var glob     = require( "glob" );
 var fs       = require( "fs" );
 var inquirer = require( "inquirer" );
-
+var chalk    = require( "chalk" );
 // Gruntfile
 // =============================================================================
 // This file is the 'control panel' for the entire project. Grunt is a
@@ -55,14 +55,18 @@ module.exports = function ( grunt ) {
   }];
 
   if ( fs.exists( "./freenas10-conf.json" ) ) {
-    confFile = grunt.file.readJSON( "freenas10-conf.json" );
-    targetPath = confFile.guiPath;
-    process.chdir( targetPath );
+    grunt.log.writeln(
+      chalk.green( "The file exists." )
+    , confFile = grunt.file.readJSON( "freenas10-conf.json" )
+    , targetPath = confFile.guiPath
+    , process.chdir( targetPath ) );
   } else {
-    inquirer.prompt( confLocation, function ( answers ) {
-      targetPath = confLocation;
-      process.chdir( targetPath );
-    });
+    grunt.log.writeln(
+      chalk.green( "The file does not exist." )
+    , inquirer.prompt( confLocation, function ( answers ) {
+      targetPath = confLocation
+      process.chdir( targetPath )
+    }) );
   };
 
   var bc = "bower_components/";
