@@ -45,32 +45,6 @@ module.exports = function ( grunt ) {
   // These are some variables that commonly change during development, and
   // will simplify any changes to file structure, ports, etc.
 
-  // Path variables for Bower components
-  var confFile;
-  var targetPath;
-  var confLocation = [
-    { name    : "guiPath"
-    , message : "Where is your gui development folder?"
-    , default : "."
-  }];
-
-  if ( fs.exists( "./freenas10-conf.json" ) ) {
-    grunt.log.writeln(
-      chalk.green( "The file exists." )
-    );
-    confFile = grunt.file.readJSON( "freenas10-conf.json" )
-    targetPath = confFile.guiPath
-    process.chdir( targetPath );
-  } else {
-    grunt.log.writeln(
-      chalk.green( "The file does not exist." )
-    );
-    inquirer.prompt( confLocation, function ( answers ) {
-      targetPath = confLocation
-      process.chdir( targetPath )
-    })
-  };
-
   var bc = "bower_components/";
   var bowerConfig =
     { velocity: bc + "velocity"
@@ -169,5 +143,5 @@ module.exports = function ( grunt ) {
   // This will run environment and dependency checkers,
   // manage the FreeNAS config file and bootstrap the FreeNAS environment.
 
-  grunt.registerTask( "default", [ "develop" ] );
+  grunt.registerTask( "default", [ "sdk-check", "develop" ] );
 };
