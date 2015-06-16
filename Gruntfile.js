@@ -57,16 +57,18 @@ module.exports = function ( grunt ) {
   if ( fs.exists( "./freenas10-conf.json" ) ) {
     grunt.log.writeln(
       chalk.green( "The file exists." )
-    , confFile = grunt.file.readJSON( "freenas10-conf.json" )
-    , targetPath = confFile.guiPath
-    , process.chdir( targetPath ) );
+    );
+    confFile = grunt.file.readJSON( "freenas10-conf.json" )
+    targetPath = confFile.guiPath
+    process.chdir( targetPath );
   } else {
     grunt.log.writeln(
       chalk.green( "The file does not exist." )
-    , inquirer.prompt( confLocation, function ( answers ) {
+    );
+    inquirer.prompt( confLocation, function ( answers ) {
       targetPath = confLocation
       process.chdir( targetPath )
-    }) );
+    })
   };
 
   var bc = "bower_components/";
