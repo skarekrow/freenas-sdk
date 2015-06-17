@@ -4,9 +4,16 @@
 
 var _        = require( "lodash" );
 var glob     = require( "glob" );
-var fs       = require( "fs" );
-var inquirer = require( "inquirer" );
-var chalk    = require( "chalk" );
+/*
+console.log( "" );
+console.log( "" );
+console.log( "" );
+console.log( "Wrong Gruntfile :(" );
+console.log( "" );
+console.log( "" );
+console.log( "" );
+*/
+
 // Gruntfile
 // =============================================================================
 // This file is the 'control panel' for the entire project. Grunt is a
