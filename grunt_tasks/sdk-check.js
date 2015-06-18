@@ -9,8 +9,8 @@ var chalk    = require( "chalk" );
 
 module.exports = function ( grunt ) {
   grunt.registerTask( "sdk-check", function ( ) {
-    // Path variables for Bower components
-    grunt.log.writeln( "Locating your sdk path" );
+    // Ask where the user is storing their development files
+    grunt.log.writeln( "Locating your development path" );
 
     var asyncDone = this.async();
     var confFile = null;
@@ -25,7 +25,7 @@ module.exports = function ( grunt ) {
 
     inquirer.prompt( confLocation, function ( answers ) {
       if ( answers["guiPath"] ) {
-        // Resolve any tildes in path to key file, if provided
+        // Resolve any tildes in path to development directory, if provided
         // (i.e ~/sdk-path)
         if ( answers["guiPath"].indexOf( "~" ) !== -1 ) {
           answers["guiPath"] = resHome( answers["guiPath"] );
