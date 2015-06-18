@@ -141,5 +141,5 @@ module.exports = function ( grunt ) {
   // This will run environment and dependency checkers,
   // manage the FreeNAS config file and bootstrap the FreeNAS environment.
 
-  grunt.registerTask( "default", [ "sdk-check", "develop" ] );
+  grunt.registerTask( "default", [ "freenas-config", "develop" ] );
 };
