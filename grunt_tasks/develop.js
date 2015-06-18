@@ -23,9 +23,6 @@ module.exports = function ( grunt ) {
     // Create the browserify bundle
     grunt.task.run( "browserify" );
 
-    // Check for a configuration file before proceeding
-    grunt.task.run( "freenas-config" );
-
     // Begin live development
     grunt.task.run( "begin-livedev" );
 
