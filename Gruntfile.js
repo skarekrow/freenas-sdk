@@ -4,15 +4,6 @@
 
 var _        = require( "lodash" );
 var glob     = require( "glob" );
-/*
-console.log( "" );
-console.log( "" );
-console.log( "" );
-console.log( "Wrong Gruntfile :(" );
-console.log( "" );
-console.log( "" );
-console.log( "" );
-*/
 
 // Gruntfile
 // =============================================================================

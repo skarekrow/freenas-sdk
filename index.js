@@ -1,6 +1,16 @@
 #!/usr/bin/env node
-var exec = require( "child_process" ).exec;
+var npm = require( "npm" );
 var grunt = require( "grunt" );
-var gruntRun = grunt.cli( [ "--gruntfile", __dirname + "/Gruntfile.js" ] );
-// grunt.cli( [ "--gruntfile, __dirname ] );
-gruntRun;
+// helper variable to store module name globally
+var modName = __dirname.match( /([^\/]*)\/*$/ )[1]
+
+npm.load( {}, function ( ) {
+  var modDir = npm.config.get( "prefix" ) + "/lib/node_modules/" + modName;
+  try {
+    process.chdir( modDir );
+    grunt.cli();
+  } catch ( err ) {
+    console.log( "Error in navigating to module directory: ", err );
+    console.log( " The directory path being: ", modDir );
+  }
+});
