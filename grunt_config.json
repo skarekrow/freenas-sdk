@@ -7,15 +7,15 @@
               },
   "fontawesome": { "less": "bower_components/fontawesome/less",
                    "fonts": "bower_components/fontawesome/fonts"
-                 },
+                 }
+               },
   "sourceConfig": { "root": "app",
                     "images": "app/source/images",
                     "favicons": "app/source/favicons",
                     "jsx": "app/jsx",
                     "styles": "app/source/styles",
                     "templates": "app/templates"
-                  }
-                },
+                  },
   "buildConfig": { "root": "app/build/",
                    "app": "app/build/js",
                    "img": "app/build/img",
@@ -30,11 +30,11 @@
                  "server": "app/server",
                  "routes": "app/server-js/routes",
                  "data": "app/data",
-                 "bower": bowerConfig,
+                 "bower": null,
                  "babel": "./node_modules/babel-core/",
                  "internalScripts": "app/source/internalScripts",
-                 "source": sourceConfig,
-                 "build": buildConfig,
+                 "source": null,
+                 "build": null,
                  "deployment": "app-deploy"
              }
            },

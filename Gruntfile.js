@@ -47,7 +47,10 @@ module.exports = function ( grunt ) {
   devVariables =
     { pkg: grunt.file.readJSON( "package.json" )
     , locations: grunt.file.readJSON( "./grunt_config.json" )
-};
+    , bower: locations.bowerConfig
+    , source: locations.sourceConfig
+    , build: locations.buildConfig
+    };
 
   // Load external configuration files
   _.assign( devVariables, loadConfig( "./grunt_tasks/config/" ) );
