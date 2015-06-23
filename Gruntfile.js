@@ -44,16 +44,12 @@ module.exports = function ( grunt ) {
   // These are some variables that commonly change during development, and
   // will simplify any changes to file structure, ports, etc.
 
-  var devVariables =
-    { pkg: grunt.file.readJSON( "package.json" )
-    , locations: grunt.file.readJSON( "./grunt_config.json" )
-    , bower: devVariables.bowerConfig
-    , source: devVariables.sourceConfig
-    , build: devVariables.buildConfig
-    };
+  var pkg = grunt.file.readJSON( "package.json" );
+  var gruntConfig = grunt.file.readJSON( "grunt_config.json" );
+  gruntConfig.pkg = pkg;
 
   // Load external configuration files
-  _.assign( devVariables, loadConfig( "./grunt_tasks/config/" ) );
+  _.assign( gruntConfig, loadConfig( "./grunt_tasks/config/" ) );
 
   grunt.initConfig( gruntConfig );
 
