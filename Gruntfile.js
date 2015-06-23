@@ -40,83 +40,17 @@ module.exports = function ( grunt ) {
 
   // DEVELOPMENT VARIABLES
   // =====================
+  // Read variables from a JSON configuration file.
   // These are some variables that commonly change during development, and
   // will simplify any changes to file structure, ports, etc.
 
-  var bc = "bower_components/";
-  var bowerConfig =
-    { velocity: bc + "velocity"
-    , d3: bc + "d3"
-    , openSans: { less: bc + "lessfonts-open-sans/src/less"
-                , fonts: bc + "lessfonts-open-sans/dist/fonts/OpenSans"
-                }
-    , fontawesome: { less: bc + "fontawesome/less"
-                   , fonts: bc + "fontawesome/fonts"
-                   }
-    };
-
-  var sourceConfig = { root: "app"
-                     , images: "app/source/images"
-                     , favicons: "app/source/favicons"
-                     , jsx: "app/jsx"
-                     , styles: "app/source/styles"
-                     , templates: "app/templates"
-                     };
-
-  var buildConfig = { root: "app/build/"
-                    , app: "app/build/js"
-                    , img: "app/build/img"
-                    , css: "app/build/css"
-                    , font: "app/build/font"
-                    , dist: "app/build/js"
-                    , ssrjs: "app/ssrjs"
-                    };
-
-
-  // Configuration environment and global variables
-  var gruntConfig =
-    // Use npm manifest as a list of available packages
+  devVariables =
     { pkg: grunt.file.readJSON( "package.json" )
-    , dirTree: { root: "./"
-               , client: "app/client"
-               , server: "app/server"
-               , routes: "app/server-js/routes"
-               , data: "app/data"
-               , bower: bowerConfig
-               , babel: "./node_modules/babel-core/"
-               , internalScripts: "app/source/internalScripts"
-               , source: sourceConfig
-               , build: buildConfig
-               , deployment: "app-deploy"
-               }
-
-    // Environment
-    , env: { port: 4000 }
-
-    // FreeNAS remote config
-    , guiDirectory: "/usr/local/www/gui"
-    , configFilePath: "./freenas10-conf.json"
-    , conditionalCommands: { enablePkg: ""
-                           , installGmake: ""
-                           , installGplusplus: ""
-                           , symlinkGplusplus: ""
-                           , symlinkCplusplus: ""
-                           , installNpm: ""
-                           , updateNpm: ""
-                           }
-    , freeNASConfig: { notConfigured: true
-                     , remoteHost: null
-                     , sshPort: null
-                     , guiPath: null
-                     , authType: null
-                     , keyPath: null
-                     , rootPass: null
-                     }
-  };
-
+    , locations: grunt.file.readJSON( "./grunt_config.json" )
+};
 
   // Load external configuration files
-  _.assign( gruntConfig, loadConfig( "./grunt_tasks/config/" ) );
+  _.assign( devVariables, loadConfig( "./grunt_tasks/config/" ) );
 
   grunt.initConfig( gruntConfig );
 
