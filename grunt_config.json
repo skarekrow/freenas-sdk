@@ -1,60 +1,69 @@
 {
-"bowerConfig": {
-  "velocity": "bower_components/velocity",
-  "d3": "bower_components/d3",
-  "openSans": { "less": "bower_components/lessfonts-open-sans/src/less",
-                "fonts": "bower_components/lessfonts-open-sans/dist/fonts/OpenSans"
-              },
-  "fontawesome": { "less": "bower_components/fontawesome/less",
-                   "fonts": "bower_components/fontawesome/fonts"
-                 }
-               },
-  "sourceConfig": { "root": "app",
-                    "images": "app/source/images",
-                    "favicons": "app/source/favicons",
-                    "jsx": "app/jsx",
-                    "styles": "app/source/styles",
-                    "templates": "app/templates"
-                  },
-  "buildConfig": { "root": "app/build/",
-                   "app": "app/build/js",
-                   "img": "app/build/img",
-                   "css": "app/build/css",
-                   "font": "app/build/font",
-                   "dist": "app/build/js",
-                   "ssrjs": "app/ssrjs"
-                 },
-  "gruntConfig": {
-    "dirTree": { "root": "./",
-                 "client": "app/client",
-                 "server": "app/server",
-                 "routes": "app/server-js/routes",
-                 "data": "app/data",
-                 "bower": null,
-                 "babel": "./node_modules/babel-core/",
-                 "internalScripts": "app/source/internalScripts",
-                 "source": null,
-                 "build": null,
-                 "deployment": "app-deploy"
-             }
-           },
-  "env": { "port": 4000 },
-  "guiDirectory": "/usr/local/www/gui",
-  "configFilePath": "./freenas10-conf.json",
-  "conditionalCommands": { "enablePkg": "",
-                           "installGmake": "",
-                           "installGplusplus": "",
-                           "symlinkGplusplus": "",
-                           "symlinkCplusplus": "",
-                           "installNpm": "",
-                           "updateNpm": "",
-                         },
-  "freeNASConfig": { "notConfigured": true,
-                     "remoteHost": null,
-                     "sshPort": null,
-                     "guiPath": null,
-                     "authType": null,
-                     "keyPath": null,
-                     "rootPass": null,
-                   },
+    "bowerConfig": {
+        "velocity": "bower_components/velocity",
+        "d3": "bower_components/d3",
+        "openSans": {
+            "less": "bower_components/lessfonts-open-sans/src/less",
+            "fonts": "bower_components/lessfonts-open-sans/dist/fonts/OpenSans"
+        },
+        "fontawesome": {
+            "less": "bower_components/fontawesome/less",
+            "fonts": "bower_components/fontawesome/fonts"
+        }
+    },
+    "sourceConfig": {
+        "root": "app",
+        "images": "app/source/images",
+        "favicons": "app/source/favicons",
+        "jsx": "app/jsx",
+        "styles": "app/source/styles",
+        "templates": "app/templates"
+    },
+    "buildConfig": {
+        "root": "app/build/",
+        "app": "app/build/js",
+        "img": "app/build/img",
+        "css": "app/build/css",
+        "font": "app/build/font",
+        "dist": "app/build/js",
+        "ssrjs": "app/ssrjs"
+    },
+    "gruntConfig": {
+        "dirTree": {
+            "root": "./",
+            "client": "app/client",
+            "server": "app/server",
+            "routes": "app/server-js/routes",
+            "data": "app/data",
+            "bower": null,
+            "babel": "./node_modules/babel-core/",
+            "internalScripts": "app/source/internalScripts",
+            "source": null,
+            "build": null,
+            "deployment": "app-deploy"
+        }
+    },
+    "env": {
+        "port": 4000
+    },
+    "guiDirectory": "/usr/local/www/gui",
+    "configFilePath": "./freenas10-conf.json",
+    "conditionalCommands": {
+        "enablePkg": "",
+        "installGmake": "",
+        "installGplusplus": "",
+        "symlinkGplusplus": "",
+        "symlinkCplusplus": "",
+        "installNpm": "",
+        "updateNpm": ""
+    },
+    "freeNASConfig": {
+        "notConfigured": true,
+        "remoteHost": null,
+        "sshPort": null,
+        "guiPath": null,
+        "authType": null,
+        "keyPath": null,
+        "rootPass": null
+    }
 }
