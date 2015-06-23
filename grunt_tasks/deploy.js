@@ -9,15 +9,6 @@ var chalk = require( "chalk" );
 var path  = require( "path" );
 
 module.exports = function ( grunt ) {
-  // Set and create deployment target's path relative to current working dir
-  var guiDev = grunt.config( [ "freeNASConfig" ] )["guiPath"];
-  var setTarget = function ( inputPath ) {
-    if ( inputPath[0] === "/" ) {
-      targetPath = guiDev;
-    } else {
-      targetPath = guiDev + "/" + inputPath;
-    }
-  };
 
   grunt.registerTask( "deploy", function () {
     var asyncDone  = this.async();
@@ -61,7 +52,6 @@ module.exports = function ( grunt ) {
       grunt.fail.warn( "Production deployments must be done on FreeBSD only." );
     }
 
-    process.chdir( targetPath );
     grunt.task.run( "shell:npmProduction" );
   });
 };
